@@ -16,3 +16,24 @@ int main() {
  
    return (0);
 }
+
+
+/////////// * 以下為計算"表面積"版本 *//////////
+#include <stdio.h>
+
+int main() {
+   int L , W , H , area , Volume;
+ 
+   printf("\nEnter the H of Side : ");
+ scanf("%d", &H);
+   printf("\nEnter the W of Side : ");
+ scanf("%d", &W);
+   printf("\nEnter the L : ");
+ scanf("%d", &L);
+ 
+   area = (L * W * 2) + ( W * H * 2) + (L * H * 2);
+   Volume = L * W * H;
+   printf("%d\t%d", area , Volume);
+ 
+   return (0);
+}
