@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+   int L , W , H , area , Volume;
+ 
+   printf("\nEnter the L of Side : ");
+ scanf("%d", &L);
+   printf("\nEnter the W of Side : ");
+ scanf("%d", &W);
+   printf("\nEnter the H : ");
+ scanf("%d", &H);
+ 
+   area = L * W;
+   Volume = L * W * H;
+   printf("%d\%3d", area , Volume);
+ 
+   return (0);
+}
