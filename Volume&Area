@@ -1,21 +1,3 @@
-#include <stdio.h>
-
-int main() {
-   int L , W , H , area , Volume;
- 
-   printf("\nEnter the L of Side : ");
- scanf("%d", &L);
-   printf("\nEnter the W of Side : ");
- scanf("%d", &W);
-   printf("\nEnter the H : ");
- scanf("%d", &H);
- 
-   area = L * W;
-   Volume = L * W * H;
-   printf("%d\%3d", area , Volume);
- 
-   return (0);
-}
 
 
 /////////// * 以下為計算"表面積"版本 *//////////
@@ -36,4 +18,22 @@ int main() {
    printf("%d\t%d", area , Volume);
  
    return (0);
+}
+
+
+///////////////////////*網站答案版本*/////////////
+#include <stdio.h>
+
+int main ()
+{
+	int h, w, d;
+	int surface_area, volume;
+
+	scanf ( "%d%d%d", &h, &w, &d );
+
+	surface_area	= 2 * ( h * w + w * d + d * h );
+	volume 		= h * w * d;
+
+	printf ( "%d %d", surface_area, volume );
+	return 0;
 }
